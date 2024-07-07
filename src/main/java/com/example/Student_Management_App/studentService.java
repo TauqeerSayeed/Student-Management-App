@@ -1,11 +1,13 @@
 package com.example.Student_Management_App;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class studentService {
-
-    studentRepository StudentRepository = new studentRepository();
+//    studentRepository StudentRepository = new studentRepository();
+    @Autowired
+    studentRepository StudentRepository;
     public Student getStudent(int admNo){
         return StudentRepository.getStudent(admNo);
     }
@@ -16,5 +18,10 @@ public class studentService {
     public String addStudent(Student student) {
         StudentRepository.addStudent(student);
         return "Student added successfully!";
+    }
+
+    public String addTeacher(Teacher teacher) {
+        StudentRepository.addTeacher(teacher);
+        return "Teacher added successfully";
     }
 }
