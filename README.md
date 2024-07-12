@@ -1,7 +1,3 @@
-Certainly! Here's the updated README file with instructions specific to IntelliJ IDEA:
-
----
-
 # Student Management App
 
 Welcome to the Student Management App! This application provides a backend for managing students and teachers, allowing you to perform various operations such as adding, retrieving, and associating students and teachers.
